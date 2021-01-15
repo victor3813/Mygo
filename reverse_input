@@ -1,0 +1,9 @@
+def reverse_input(input_values):
+    a = str(input())
+    b = str(input())
+    c = str(input())
+    d = str(input())
+    e = str(input())
+    output_values = {e:{d:{c:{b:a}}}}
+    return output_values
+reverse_input(output_values)
