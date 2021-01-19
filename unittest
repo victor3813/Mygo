@@ -1,0 +1,10 @@
+import unittest
+from *** import reverse_input
+"""請輸入來源至  """
+
+class activeTest(unittest.TestCase):
+     def test_reverse_input(self):
+       self.assertEqual(reverse_input(),{I:{deserve:{to:{be:hired}}}})
+
+if __name__ == "__main__":
+   unittest.main(exit=False)
