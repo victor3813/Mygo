@@ -1,4 +1,9 @@
+#doctest
 def reverse_input():
+    """
+    >>>reverse_input()
+    {I:{deserve:{to:{be:hired}}}}
+    """
     a = str(input())
     b = str(input())
     c = str(input())
@@ -9,7 +14,6 @@ def reverse_input():
     return output_values
     
 reverse_input()
-
 
 
 
