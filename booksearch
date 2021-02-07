@@ -56,10 +56,10 @@ def get_ISBN(url):
         tag_item = soup.find_all(class_="item")
         for item in tag_item:
             book = []
-            book.append(item.find("a")["title"])
+            book.append(item.find("img")["alt"])
             book.append(get_ISBN(item.find("a")["href"]))
             book.append("http:" + item.find("a")["href"])
-            price = item.find(class_="price").find_all("strong")
+            price = item.find(class_="list-nav").find_all("strong")
             if len(price) == 1:
                 book.append(price[0].string)
             else:
