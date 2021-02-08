@@ -48,7 +48,7 @@ def get_ISBN(url):
             
             
  def web_scraping_bot(url):
-    booklist = [["書名","ISBN","網址","書價"]]
+    booklist = [["書名","出版社","網址","書價"]]
     print("抓取網路資料中...")
     soup = parse_html(get_resource(url))
     if soup != None:
