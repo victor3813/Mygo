@@ -32,7 +32,7 @@ def get_ISBN(url):
     soup = parse_html(get_resource("http:" + url))
     if soup != None:
         try:
-           isbn = soup.find(itemprop="productID")["content"][5:]
+           isbn = soup.find(target="blank")["title"]
         except:
            isbn = "0000"
     else:
